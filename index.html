@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Historia języków programowania</title>
+  <link href="main.css" rel="stylesheet" />
+  <script async src="smooth-scroll.polyfills.min.js" type="text/javascript"></script>
+  <script async src="main.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <nav class="sidenav">
+    <h2 class="sidenav__header">Spis Treści</h2>
+    <ul class="sidenav__items-wrapper">
+      <li class="sidenav__item">
+        <a href="#poczatki_programowania">Początki programowania</a>
+      </li>
+      <li>
+        <a class="sidenav__item" href="#pierwsze_jezyki_wysokiego_poziomu">
+          Pierwsze języki wysokiego poziomu
+        </a>
+      </li>
+      <li><a class="sidenav__item" href="#short_code">Short Code</a></li>
+      <li><a class="sidenav__item" href="#fortran">Fortran</a></li>
+      <li><a class="sidenav__item" href="#cobol">COBOL</a></li>
+      <li><a class="sidenav__item" href="#basic">BASIC</a></li>
+      <li><a class="sidenav__item" href="#pascal">Pascal</a></li>
+      <li><a class="sidenav__item" href="#c_language">C</a></li>
+      <li><a class="sidenav__item" href="#cplusplus">C++</a></li>
+      <li><a class="sidenav__item" href="#python">Python</a></li>
+      <li><a class="sidenav__item" href="#ruby">Ruby</a></li>
+      <li><a class="sidenav__item" href="#php">PHP</a></li>
+      <li><a class="sidenav__item" href="#java">Java</a></li>
+      <li><a class="sidenav__item" href="#js">JavaScript</a></li>
+      <li><a class="sidenav__item" href="#csharp">C#</a></li>
+      <li><a class="sidenav__item" href="#podsumowanie">Podsumowanie</a></li>
+    </ul>
+
+    <div class="sidenav__button-wrapper">
+      <a href="#index" class="sidenav__button">Skorowidz</a>
+      <div class="sidenav__button-decoration"></div>
+    </div>
+  </nav>
+
+  <div class="globalwrapper">
+    <header class="header">
+      <h1 class="header__title">Historia języków <br />programowania</h1>
+      <span class="header__author">Wykonał Michał Karpierz z klasy 1T</span>
+      <div class="header__languages header__languages--top">
+        <a href="#cobol"><img src="img/cobol_rect.svg" alt="cobolrect_rect" /></a>
+        <a href="#fortran"><img src="img/fortran_rect.svg" alt="fortran_rect" /></a>
+        <a href="#basic"><img src="img/basic_rect.svg" alt="basic_rect" /></a>
+        <a href="#pascal"><img src="img/pascal_rect.svg" alt="pascal_rect" /></a>
+        <a href="#c_language"><img src="img/c_rect.svg" alt="c_rect" /></a>
+        <a href="#cplusplus"><img src="img/cpp_rect.svg" alt="cpp_rect" /></a>
+      </div>
+      <div class="header__languages header__languages--bottom">
+        <a href="#python"><img src="img/python_rect.svg" alt="python_rect" /></a>
+        <a href="#ruby"><img src="img/ruby_rect.svg" alt="ruby_rect" /></a>
+        <a href="#php"><img src="img/php_rect.svg" alt="php_rect" /></a>
+        <a href="#java"><img src="img/java_rect.svg" alt="java_rect" /></a>
+        <a href="#js"><img src="img/js_rect.svg" alt="js_rect" /></a>
+        <a href="#csharp"><img src="img/csharp_rect.svg" alt="csharp_rect" /></a>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2 id="poczatki_programowania" class="section__title">
+        Początki programowania
+      </h2>
+      <div class="section__content">
+        <p>
+          Mechaniczne urządzenia liczące są konstruowane już od czasów
+          starożytnych. <b>Mechanizm z Antykithiry</b> pochodzący z czasów
+          starożytnej Grecji (150-100 p.n.e.) był mechanicznym kalkulatorem
+          opartym na zespole kół zębatych, służącym do obliczeń
+          astronomicznych. Arabski wynalazca <b>Al-Jazari</b> zbudował w 1206
+          roku programowalny automat perkusyjny z pałeczkami oraz krzywkami
+          umieszczonymi na drewnianym bębnie w określonych miejscach. W miarę
+          obrotu bębna uderzały one o dźwignie, które odgrywały określony
+          dźwięk na instrumencie perkusyjnym. W 1805 roku powstało krosno
+          tkackie <b>Josepha Marie Jacquarda</b>. Maszyna korzystała z kart
+          dziurkowanych, na których zapisany był wzór tkaniny do wytworzenia.
+          Zmieniając zestaw kart, można było uzyskać tkaniny z innymi wzorami.
+          Pomysł ten został później podchwycony przez
+          <b>Hermana Holleritha</b> z IBM.
+        </p>
+        <p>
+          W 1833 roku <b>Charles Babbage</b> zaczął budowę maszyny
+          analitycznej będącej w istocie mechanicznym, programowalnym
+          protokomputerem, który wyprzedzał swoją epokę. Z powodu trudności
+          konstrukcyjnych, a także braku zainteresowania rządu Wielkiej
+          Brytanii wynalazca nie dokończył swojego wynalazku, lecz projekt
+          został opisany przez <b>Adę Lovelace</b>, która napisała także dla
+          niego pierwszy program obliczający liczby Bernoulliego i w ten
+          sposób została pierwszym programistą (a właściwie programistką) w
+          historii.
+        </p>
+        <p>
+          Wynalezienie architektury <b>John'a von Neumanna</b> umożliwiło
+          przechowywanie programów komputerowych w pamięci operacyjnej
+          komputera razem z danymi. Pierwsze programy musiały być składane
+          bezpośrednio z operacji oferowanych przez konkretną maszynę, często
+          w notacji binarnej. Każdy model używał innego zestawu komend, co
+          ograniczało przenośność. W późniejszych latach zaprojektowano
+          pierwsze asemblery, gdzie programista mógł wpisywać instrukcje w
+          formacie tekstowym z wykorzystaniem zapisu symbolicznego zamiast
+          numeru rozkazu, np. ADD X, TOTAL.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <h2 id="pierwsze_jezyki_wysokiego_poziomu" class="section__title">
+        Pierwsze języki wysokiego poziomu
+      </h2>
+      <div class="section__content">
+        <p>
+          Języki wysokopoziomowe stanowią pewną abstrakcję kodu maszynowego.
+          Część procesów zostaje zautomatyzowana i ukryta przed użytkownikiem.
+          Przykładem może być tutaj zarządzanie pamięcią. Język wykorzystywany
+          do tworzenia programów jest lepiej zrozumiały dla człowieka,
+          szybciej można się go nauczyć i łatwiej pisze się na nim kod. Wadą
+          języków wysokiego poziomu, która doskwierała głównie we wczesnych
+          latach technologii IT, było to, że potrzebowały one więcej pamięci
+          operacyjnej na tłumaczenie kodu na język maszynowy. Z kolei programy
+          nimi napisane można było uruchomić na różnorodnych maszynach, co
+          dawało im znaczną przewagę nad swoimi prekursorami.
+        </p>
+        <p>
+          Już w latach 40-tych powstał pierwszy język programowania wysokiego
+          poziomu (Plankalkül), którego autorem był <b>Konrad Zuse</b>, jednak
+          nie został on zaimplementowany do żadnego z ówczesnych komputerów.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <h2 id="short_code" class="section__title">Short Code</h2>
+      <div class="section__content">
+        <p>
+          W 1949 powstaje Short Code. Był to pierwszy język programowania
+          wysokiego poziomu, który wszedł do użytku. Jego autorem był
+          <b>John Maulchy</b>. Mimo tego, że komputer potrzebował około 50
+          razy więcej czasu na dokonanie interpretacji napisanego za pomocą
+          tego języka programu niż potrzebowałby go na zrozumienie kodu
+          stworzonego przy pomocy języka maszynowego, to Short Code w sposób
+          znaczący usprawnił pracę pierwszych programistów. Z samej nazwy
+          programu można wyczytać radość jaką czuł jego twórca na myśl, że
+          będzie miał lżejsza pracę.
+        </p>
+        <p>
+          Wadą Short Code było to, że podobnie jak we wcześniejszych językach
+          maszynowych, programista musiał ręcznie zamieniać napisany przez
+          siebie kod na system binarny. Dopiero w 1951 roku powstaje
+          kompilator <b>A-o System</b>, który samodzielnie tłumaczył kod
+          napisany przez człowieka na system binarny, a potem na język
+          maszynowy. Ten wynalazek, którego autorką była <b>Grace Hopper</b>,
+          otworzył drogę do szybkiego rozwoju i upowszechniania się języków
+          programowania wysokiego poziomu.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <h2 id="fortran" class="section__title">Fortran</h2>
+      <div class="section__content">
+        <img src="img/fortran_rect.svg" alt="fortran-logo" class="section__logo" />
+        <p>
+          <b>John Backus</b> tworzy dla IBM w 1954 roku język wysokiego
+          poziomu o nazwie FORTRAN. 3 lata później zostaje on udostępniony dla
+          celów komercyjnych. Staje się on pierwszym językiem wysokiego
+          poziomu, który zdobywa dużą popularność. Wiele z jego funkcji na
+          zawsze wchodzi do kanonów programowania i jest dziedziczona przez
+          następne języki, jak np. logiczne typy danych.
+        </p>
+        <p>
+          Z pierwszych wersji języka pochodzi zasada braku rozróżniania małych
+          i wielkich liter w słowach kluczowych języka oraz używanych
+          zmiennych, a także bogate zasady tworzenia formatów zapisywanych i
+          drukowanych danych.
+        </p>
+        <p>
+          Fortran dysponuje wielką liczbą bibliotek, które pozwalają rozwiązać
+          praktycznie każde zadanie numeryczne. Najważniejsze przyczyny, z
+          powodu których Fortran jest wykorzystywany i rozwijany do dziś, to
+          szybkość obliczeń oraz wysoka wydajność kodu generowanego przez
+          kompilatory Fortranu, wynikająca m.in. z jego długiej obecności na
+          rynku programistycznym, znakomita skalowalność i przenośność
+          oprogramowania (pomiędzy różnymi platformami sprzętowymi i systemami
+          operacyjnymi), a także dostępność bibliotek dla programowania
+          wieloprocesorowego i równoległego oraz bibliotek graficznych.
+          Obliczenia aerodynamiczne, wytrzymałościowe i cieplne obecnie często
+          prowadzone są z użyciem tego języka.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <h2 id="cobol" class="section__title">COBOL</h2>
+      <div class="section__content">
+        <img src="img/cobol_rect.svg" alt="cobol-logo" class="section__logo" />
+        <p>
+          Common Business Oriented Language powstał w 1959 roku w zespole
+          prowadzonym przez <b>Grace Murray Hopper</b> dla systemów bankowych
+          i przeprowadzanych przez nie transakcji. Co ciekawe, prace nad nim
+          zostały zainicjowane przez amerykański Departament Obrony w celu
+          ustalenia wspólnego języka programowania dla środowisk
+          przemysłowych. Pod koniec XX wieku aż 90 proc. transakcji
+          finansowych na całym świecie było przetwarzanych przez programy
+          napisane w COBOLU.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <h2 id="basic" class="section__title">BASIC</h2>
+      <div class="section__content">
+        <img src="img/basic_rect.svg" alt="basic-logo" class="section__logo" />
+        <p>
+          Nazwa języka jest akronimem od Beginner’s All-purpose Symbolic
+          Instruction Code. Został stworzony w 1964 roku przez
+          <b>John Kemeny’ego</b> i <b>Thomas Kurtza</b> z Dartmouth College, w
+          oparciu m.in. o Fortran. Celem jego twórców było stworzenie języka
+          łatwego w użytkowaniu, o wszechstronnym zastosowaniu. Dzięki temu
+          programować mogły także osoby bez mocnej podbudowy technicznej i
+          matematycznej.
+        </p>
+        <p>
+          BASIC wybił się na czoło języków do zastosowań amatorskich i
+          półprofesjonalnych po wprowadzeniu na rynek mikrokomputera
+          <b>Altair 8800</b>. Twórcami dialektu BASIC-a dla tej maszyny byli
+          <b>Bill Gates</b> i <b>Paul Allen</b>. BASIC szybko zaimplementowany
+          został przy budowie serii komputerów Apple, a później (jako GW
+          BASIC) w IBM PC (początkowo w ROM, a po pojawieniu się DOS-a – na
+          dyskietce).
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <h2 id="pascal" class="section__title">Pascal</h2>
+      <div class="section__content">
+        <img src="img/pascal_rect.svg" alt="pascal-logo" class="section__logo" />
+        <p>
+          Pascal powstaje w 1969 roku. Jego autorem jest
+          <b>Niklaus Wirth</b>, który tworzy go z myślą o swoich studentach.
+          Pascal miał w zamyśle być łatwy do nauki i posiadać dobre narzędzie
+          debugujące. Niklaus wzorował się na istniejących w tym czasie
+          językach, z każdego pożyczając jego dobre strony i ignorując wady.
+        </p>
+        <p>
+          Popularność Pascala znacznie wzrosła z pojawieniem się
+          <b>Delphi</b> – środowiska programistycznego, opartego na obiektowym
+          Pascalu, pozwalającego na błyskawiczne tworzenie atrakcyjnych
+          wizualnie aplikacji pod Windows.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <h2 id="c_language" class="section__title">C</h2>
+      <div class="section__content">
+        <img src="img/c_rect.svg" alt="c-logo" class="section__logo" />
+        <p>
+          Pomiędzy rokiem 1969, a 1973 powstawał język C. Jego autorami są
+          <b>Dennis Ritchie</b> oraz <b>Ken Thompson</b>. Wraz z
+          współpracownikami tworzą w nim system operacyjny <b>Unix</b>, który
+          staje się pierwszym systemem operacyjnym stworzonym w języku
+          wysokiego poziomu. C wraz z Unixem podbijają ówczesny świat. C
+          szybko zaczął odbierać Pascalowi jego zwolenników i stał się jednym
+          z najpopularniejszych języków programowania w historii.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <h2 id="cplusplus" class="section__title">C++</h2>
+      <div class="section__content">
+        <img src="img/cpp_rect.svg" alt="cpp-logo" class="section__logo" />
+        <p>
+          Z czasem C ewoluował w C++ (stworzony w 1983 roku), nazwany nawet
+          językiem programowania lat 90. Jest łatwiejszy w użyciu niż jego
+          pierwowzór, a po niewielkich modyfikacjach umożliwia przenoszenie
+          kodu źródłowego napisanego pierwotnie m.in. w Fortranie. Z tego
+          rozwiązania korzystają ośrodki naukowe zajmujące się fizyką, m.in.
+          słynny, szwajcarski CERN. C++, podobnie jak klasyczny C znajduje się
+          na szczycie listy najpopularniejszych języków programowania i
+          używany jest m.in przez Microsoft Office, Adobe PDF Reader oraz
+          przeglądarkę Mozilla Firefox.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <h2 id="python" class="section__title">Python</h2>
+      <div class="section__content">
+        <img src="img/python_rect.svg" alt="python-logo" class="section__logo" />
+        <p>
+          Język, który dla odmiany powstał w Holandii, a nie w USA, jest
+          dziełem
+          <b>Guido van Rossuma</b>. Wydany w wersji 1.0 w 1994 roku, jest
+          rozwijany jako projekt Open Source , którym zarządza organizacja
+          non-profit <b>Python Software Foundation</b>. Oznacza, że każdy może
+          go modyfikować i ulepszać. Ciekawostką jest nazwa tego języka. Van
+          Rossum chciał czegoś krótkiego i unikalnego, a przy okazji był fanem
+          popularnego w latach siedemdziesiątych serialu komediowego „Latający
+          Cyrk Monty Pythona”. W ten właśnie sposób nowy język stał się
+          Pythonem. Jest uważany za język stosunkowo łatwy do nauczenia się, a
+          w ostatnim czasie zdobywa coraz więcej zwolenników. W Pythonie
+          powstał m.in. serwis YouTube.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <h2 id="ruby" class="section__title">Ruby</h2>
+      <div class="section__content">
+        <img src="img/ruby_rect.svg" alt="ruby-logo" class="section__logo" />
+        <p>
+          Narodził się on w wyniku poszukiwań Japończyka,
+          <b>Yukihiro Matsumoto</b>, idealnego języka skryptowego. W związku z
+          tym, że żaden z dostępnych nie spełniał oczekiwań, wybrał m.in. z
+          Pythona, Perla i Smalltalka to co najlepsze, dołożył to czego mu w
+          nich brakowało i tak, w 1993 roku narodził się Ruby. Z początku
+          język nie wychodził poza granice kraju jego twórcy. Popularność Ruby
+          zaczeła się na przełomie 2004 i 2005 roku, kiedy to zespół
+          programistów kierowany przez
+          <b>Davida Heinemeiera Hanssona</b> stworzył framework
+          <b>Ruby on Rails</b> do tworzenia aplikacji webowych. Od tej pory
+          Ruby pnie się w górę w zestawieniu najpopularniejszych języków
+          programowania.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <h2 id="php" class="section__title">PHP</h2>
+      <div class="section__content">
+        <img src="img/php_rect.svg" alt="php-logo" class="section__logo" />
+        <p>
+          Historia PHP (Personal Home Page) zaczyna się w 1995 roku, kiedy to
+          autor nowego języka, <b>Rasmus Lerdorf</b>, upublicznił kod
+          źródłowy. PHP powstał do tworzenia stron internetowych i
+          projektowania aplikacji webowych. Od czasu pierwszej publikacji, PHP
+          był wielokrotnie, przez zespoły różnych programistów udoskonalany i
+          wydawany w nowych wersjach. Aktualnie trwają prace nad siódmą wersją
+          tego języka. Dziś PHP jest jednym z dominujących języków
+          programowania i obejmuje około 75% domen internetowych. Tworzy się w
+          nim m.in. systemy zarządzania treścią, systemy forów dyskusyjnych
+          czy aplikacje pocztowe. W języku PHP napisany został m.in. Facebook
+          (który stworzył do niego <b>Hip Hop PHP</b>, tłumaczący kod źródłowy
+          języka PHP na C++ w celu zmniejszenia obciążenia serwerów na których
+          działa serwis).
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <h2 id="java" class="section__title">Java</h2>
+      <div class="section__content">
+        <img src="img/java_rect.svg" alt="java-logo" class="section__logo" />
+        <p>
+          Twórcom Javy, zespołowi pod kierownictwem <b>Jamesa Goslinga</b>,
+          przyświecał cel stworzenia języka, w którym raz napisany kod
+          źródłowy będzie można uruchomić na jakimkolwiek komputerze z
+          zainstalowaną Javą. Miał on być niezawodny, bezpieczny i prosty w
+          użyciu, dzięki dogłębnej analizie cech języka C++ powodujących
+          najwięcej błędów i wyeliminowanie ich w Javie. Dziś docenia się
+          bezpieczeństwo powstałego w 1995 roku języka – jego konstrukcja
+          „pilnuje” aby programista nie popełniał błędów. Dyskusyjna jest
+          natomiast jego prostota. Programowanie w Javie jest stosunkowo
+          szybkie i nie wymaga dużych nakładów pracy. Tworzy się w nim m.in.
+          aplikacje mobilne i gry.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <h2 id="js" class="section__title">JavaScript</h2>
+      <div class="section__content">
+        <img src="img/js_rect.svg" alt="js-logo" class="section__logo" />
+        <p>
+          Wbrew pozorom Java i JavaScript nie są ze sobą spokrewnione. Łączy
+          je jedynie nazwa oraz rok powstania. Twórcą JavaScriptu jest
+          <b>Brendan Eich</b>, którego celem było zbudowanie języka do
+          tworzenia dynamicznych stron internetowych, jednak z czasem zaczęto
+          wykorzystywać go także do projektowania m.in. aplikacji webowych i
+          desktopowych. Projekt pracowników firmy <b>Netscape</b> (którego
+          pracownikiem był Eich) powstał jako język skryptowy dla maszyny
+          wirtualnej, która ma zapewnić mechanizmy komunikacji ze światem
+          zewnętrznym. Najbardziej popularną maszyną wirtualną jest
+          przeglądarka, ale interpretery JavaScriptu można znaleźć np. w
+          programach Adobe Acrobat czy w Photoshopie.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <h2 id="csharp" class="section__title">C#</h2>
+      <div class="section__content">
+        <img src="img/csharp_rect.svg" alt="csharp-logo" class="section__logo" />
+        <p>
+          Na zakończenie jeden z najmłodszych języków – C#. Odwołujący się
+          bezpośrednio do języka C, język C# został stworzony przez firmę
+          Microsoft w 2000 roku pod okiem <b>Andersa Hejlsberga</b>. W jego
+          składni znajdują się także odwołania do C++ oraz Javy. Uważa się go
+          za język prosty do nauczenia, m.in. ze względu na dużą ilość
+          gotowych rozwiązań, które ułatwiają i skracają czas pisania. C# jest
+          językiem ogólnego przeznaczenia, ściśle związanym z platformą
+          programistyczną <b>.NET Framework</b>.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <h2 id="podsumowanie" class="section__title">Podsumowanie</h2>
+      <div class="section__content">
+        <p>
+          W początkowym okresie głównym zmartwieniem twórców nowych języków
+          programowania było to, czy język będzie w stanie spełniać powierzone
+          mu zadania pomimo ograniczeń technologicznych. Stworzone w ten
+          sposób języki były ulepszanie w celu zwiększenia łatwości ich
+          użytkowania, po to żeby nie tylko zawodowi matematycy byli w stanie
+          pisać przy ich pomocy programy komputerowe.
+        </p>
+        <p>
+          Pierwsze języki potrafiły wykonać niewielką ilość funkcji i
+          bezpośrednio opisywały sposób w jaki komputer czytał kod. Bardziej
+          współczesne języki, starają się być uniwersalne i abstrakcyjne. Brak
+          ograniczeń takich jak ilość dostępnej pamięci, pozwala na
+          uproszczenie składni poprzez ukrywanie wielu czynności w tle.
+        </p>
+        <p>
+          Wszystko to sprawiło, że dzisiejsze języki programowania mogą być
+          wykorzystywane do olbrzymiej liczby czynności i tylko wyobraźnia i
+          czas ograniczają możliwości programistów.
+        </p>
+      </div>
+    </section>
+
+    <section class="index" id="index">
+      <h1 class="index__title">
+        Skorowidz
+      </h1>
+      <div class="index__content">
+        <div class="index__letter-section">
+          <div class="index__letter">
+            A
+          </div>
+          <div class="index__entries">
+            <a href="#short_code" class="index__entry">A-o System</a>
+            <a href="#poczatki_programowania" class="index__entry">Ada Lovelace</a>
+            <a href="#poczatki_programowania" class="index__entry">Al-Jazari</a>
+            <a href="#basic" class="index__entry">Altair 8800</a>
+            <a href="#csharp" class="index__entry">Anders Hejlsberg</a>
+          </div>
+        </div>
+
+        <div class="index__letter-section">
+          <div class="index__letter">
+            B
+          </div>
+          <div class="index__entries">
+            <a href="#basic" class="index__entry">Bill Gates</a>
+            <a href="#js" class="index__entry">Brendan Eich</a>
+          </div>
+        </div>
+
+        <div class="index__letter-section">
+          <div class="index__letter">
+            C
+          </div>
+          <div class="index__entries">
+            <a href="#poczatki_programowania" class="index__entry">Charles Babbage</a>
+          </div>
+        </div>
+
+        <div class="index__letter-section">
+          <div class="index__letter">
+            D
+          </div>
+          <div class="index__entries">
+            <a href="#ruby" class="index__entry">David Heinemeier Hansson</a>
+            <a href="#pascal" class="index__entry">Delphi</a>
+            <a href="#c_language" class="index__entry">Dennis Ritchie</a>
+          </div>
+        </div>
+
+        <div class="index__letter-section">
+          <div class="index__letter">
+            G
+          </div>
+          <div class="index__entries">
+            <a href="#short_code" class="index__entry">Grace Murray Hopper (A-o System)</a>
+            <a href="#cobol" class="index__entry">Grace Murray Hopper (COBOL)</a>
+            <a href="#python" class="index__entry">Guido van Rossum</a>
+          </div>
+        </div>
+
+        <div class="index__letter-section">
+          <div class="index__letter">
+            H
+          </div>
+          <div class="index__entries">
+            <a href="#poczatki_programowania" class="index__entry">Herman Hollerith</a>
+            <a href="#php" class="index__entry">Hip Hop PHP</a>
+          </div>
+        </div>
+
+        <div class="index__letter-section">
+          <div class="index__letter">
+            J
+          </div>
+          <div class="index__entries">
+            <a href="#java" class="index__entry">James Gosling</a>
+            <a href="#fortran" class="index__entry">John Backus</a>
+            <a href="#basic" class="index__entry">John Kemeny</a>
+            <a href="#short_code" class="index__entry">John Maulchy</a>
+            <a href="#poczatki_programowania" class="index__entry">John von Neumann</a>
+            <a href="#poczatki_programowania" class="index__entry">Joseph Marie Jacquard</a>
+          </div>
+        </div>
+
+        <div class="index__letter-section">
+          <div class="index__letter">
+            K
+          </div>
+          <div class="index__entries">
+            <a href="#c_language" class="index__entry">Ken Thompson</a>
+            <a href="#pierwsze_jezyki_wysokiego_poziomu" class="index__entry">Konrad Zuse</a>
+          </div>
+        </div>
+
+        <div class="index__letter-section">
+          <div class="index__letter">
+            M
+          </div>
+          <div class="index__entries">
+            <a href="#poczatki_programowania" class="index__entry">Mechanizm z Antykithiry</a>
+          </div>
+        </div>
+
+        <div class="index__letter-section">
+          <div class="index__letter">
+            N
+          </div>
+          <div class="index__entries">
+            <a href="#csharp" class="index__entry">.NET Framework</a>
+            <a href="#js" class="index__entry">Netscape</a>
+            <a href="#pascal" class="index__entry">Niklaus Wirth</a>
+          </div>
+        </div>
+
+        <div class="index__letter-section">
+          <div class="index__letter">
+            P
+          </div>
+          <div class="index__entries">
+            <a href="#basic" class="index__entry">Paul Allen</a>
+            <a href="#python" class="index__entry">Python Software Foundation</a>
+          </div>
+        </div>
+
+        <div class="index__letter-section">
+          <div class="index__letter">
+            R
+          </div>
+          <div class="index__entries">
+            <a href="#php" class="index__entry">Rasmus Lerdorf</a>
+            <a href="#ruby" class="index__entry">Ruby on Rails</a>
+          </div>
+        </div>
+
+        <div class="index__letter-section">
+          <div class="index__letter">
+            T
+          </div>
+          <div class="index__entries">
+            <a href="#basic" class="index__entry">Thomas Kurtz</a>
+          </div>
+        </div>
+
+        <div class="index__letter-section">
+          <div class="index__letter">
+            U
+          </div>
+          <div class="index__entries">
+            <a href="#c_language" class="index__entry">Unix</a>
+          </div>
+        </div>
+
+        <div class="index__letter-section">
+          <div class="index__letter">
+            Y
+          </div>
+          <div class="index__entries">
+            <a href="#ruby" class="index__entry">Yukihiro Matsumoto</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
